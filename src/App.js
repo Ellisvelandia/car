@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import "./style.css";
 import {
   EffectComposer,
-  DepthOfField,
+  // DepthOfField,
   Bloom,
   ChromaticAberration,
 } from "@react-three/postprocessing";
@@ -62,7 +62,7 @@ function CarShow() {
       <Rings />
 
       <EffectComposer>
-        <DepthOfField focusDistance={0.0035} focalLength={0.01} bokehScale={3} height={480} />
+        {/* <DepthOfField focusDistance={0.0035} focalLength={0.01} bokehScale={3} height={480} /> */}
         <Bloom
           blendFunction={BlendFunction.ADD}
           intensity={1.3} // The bloom intensity.
